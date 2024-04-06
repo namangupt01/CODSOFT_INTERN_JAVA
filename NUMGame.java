@@ -1,3 +1,15 @@
+/*1. Generate a random number within a specified range, such as 1 to 100.
+2. Prompt the user to enter their guess for the generated number.
+3. Compare the user's guess with the generated number and provide feedback on whether the guess
+is correct, too high, or too low.
+4. Repeat steps 2 and 3 until the user guesses the correct number.
+You can incorporate additional details as follows:
+5. Limit the number of attempts the user has to guess the number.
+6. Add the option for multiple rounds, allowing the user to play again.
+7. Display the user's score, which can be based on the number of attempts taken or rounds won. */
+
+/*______________________________________________________________________________________________ */
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -17,10 +29,13 @@ public class NUMGame {
      do {
 
          int generated_number = x.nextInt(10);
-        
+//         System.out.println(generated_number);
+         System.out.println("Round:"+round);
          System.out.println("Here the system has generated the random number " + " you have to guess the number on your"
                  + "own to match the generated number under fewer number of chances else  you will lose the match");
-
+         System.out.println();;
+         System.out.println("Guess the number between 1 and 10 in three attempts to win the game ");
+         System.out.println();
          System.out.println("Press 1 to start the game");
          System.out.println();
 
@@ -105,4 +120,6 @@ System.out.println("You are out of the game , HEHE");
 
 
     }
+
+
 
